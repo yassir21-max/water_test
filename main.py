@@ -8,7 +8,7 @@ app = FastAPI(
     description="Predicting Water Potability"
 )
 
-with open(r"C:\Users\yassir.arroud\OneDrive - Luxottica Group S.p.A\Desktop\End_to_End_MLOPS\prj2\the_git_project\water-test\models\model.pkl", "rb") as f:
+with open("model.pkl", "rb") as f:
     model = pickle.load(f)
 
 
